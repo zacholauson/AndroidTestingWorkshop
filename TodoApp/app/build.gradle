@@ -34,7 +34,7 @@ configurations.all { resolutionStrategy.force 'com.google.guava:guava:19.0-rc2' 
 
 dependencies {
   final DAGGER_VERSION = '2.4'
-  final ROBOLECTRIC_VERSION = '3.1-SNAPSHOT'
+  final ROBOLECTRIC_VERSION = '3.1'
 
   compile group: 'com.android.support', name: 'appcompat-v7',    version: '23.4.0'
 
@@ -57,16 +57,14 @@ dependencies {
   androidTestCompile group: 'org.mockito', name: 'mockito-core', version: '1.10.19'
 
   // Used for unit testing Android components
-  testCompile        group: 'org.robolectric', name: 'android-all',  version: '4.1.2_r1-robolectric-0'
-  androidTestCompile group: 'org.robolectric', name: 'android-all',  version: '4.1.2_r1-robolectric-0'
   testCompile        group: 'org.robolectric', name: 'robolectric',  version: ROBOLECTRIC_VERSION
   androidTestCompile group: 'org.robolectric', name: 'robolectric',  version: ROBOLECTRIC_VERSION
   testCompile        group: 'org.robolectric', name: 'shadows-core', version: ROBOLECTRIC_VERSION
   androidTestCompile group: 'org.robolectric', name: 'shadows-core', version: ROBOLECTRIC_VERSION
 
   // Required by Robolectric for mocking Canvas
-  testCompile         group: 'org.khronos', name: 'opengl-api', version: 'gl1.1-android-2.1_r1'
-   androidTestCompile group: 'org.khronos', name: 'opengl-api', version: 'gl1.1-android-2.1_r1'
+  testCompile        group: 'org.khronos', name: 'opengl-api', version: 'gl1.1-android-2.1_r1'
+  androidTestCompile group: 'org.khronos', name: 'opengl-api', version: 'gl1.1-android-2.1_r1'
 }
 
 // prevent the "superClassName is empty" error for classes not annotated as tests
