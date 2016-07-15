@@ -3,7 +3,7 @@ package io.zacholauson.todo;
 import javax.inject.Singleton;
 
 import dagger.Component;
-import io.zacholauson.todo.MainActivity;
+import io.zacholauson.todo.activities.MainActivity;
 import io.zacholauson.todo.modules.TodoModule;
 
 @Singleton
